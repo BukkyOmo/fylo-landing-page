@@ -1,0 +1,327 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    padding: 0px 20px;
+}
+
+.logo-div{
+    width: 110px;
+    padding: 8px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.nav-links{
+    display: flex;
+}
+
+h1, h2{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: hsl(243, 87%, 12%);
+}
+
+h2{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-links li{
+    list-style-type: none;
+    margin-left: 12px;
+    color: hsl(238, 22%, 44%);
+
+}
+
+.first-illustration-container{
+    text-align: center;
+    padding: 30px;
+    color: hsl(238, 22%, 44%);
+}
+
+form{
+    display: grid;
+    width: 100%;
+}
+
+.form-item{
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.second-section-container{
+    background-image: url('../images/bg-curve-mobile.svg');
+    background-repeat: repeat;
+    margin-top: 30px;
+    padding-top: 50px;
+}
+
+.inner-section{
+    padding: 50px 30px;
+    background-color: hsl(240, 75%, 98%);
+}
+
+.second-illustration-content{
+    padding: 50px 2px;
+}
+
+.second-illustration-content p{
+    color: hsl(238, 22%, 44%);
+}
+
+.fylo-link-div{
+    text-align: center;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    padding-bottom: 5px;
+}
+
+.fylo-link-outer-div{
+    padding: 0px 81px;
+}
+
+.fylo-link-div ::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    color: hsl(170, 45%, 43%);
+}
+
+.fylo-link-div a{
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+}
+
+.testimonial-div{
+    background-color: white;
+    margin: auto;
+    border-radius: 2px;
+    box-shadow: 1px 1px 25px 0 rgba(0,0,0,0.05);
+    max-width: 100%;
+    padding: 20px 25px;
+    margin-top: 40px;
+    font-size: 11px;
+    line-height: 20px;
+    color: hsl(238, 22%, 44%);
+}
+
+.bio p{
+    margin: 4px 0px;
+}
+
+.avatar-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+footer{
+    background-color: hsl(243, 87%, 12%);
+    color: #FFF;
+    padding: 60px 35px;
+}
+
+.bio{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.bio span{
+    font-size: 10px;
+}
+
+.bio-content{
+    margin-left: 10px;
+}
+
+.second-CTA-section{
+    padding: 30px 40px 80px;
+    line-height: 23px;
+    text-align: center;
+    background-color: hsl(238, 22%, 44%);
+    color: #FFF;
+}
+
+button{
+    background-color: hsl(224, 93%, 58%);
+    border: 1px solid hsl(224, 93%, 58%);
+    color: #FFF;
+    width: 100%;
+}
+
+.fylo-contact-info{
+    display: flex;
+}
+
+.fylo-contact-info-item{
+    margin-left: 15px;
+}
+
+.social-media-links{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-links-item{
+    margin: 10px;
+    width: 24px;
+    border: 1px solid #FFF;
+    height: 24px;
+    padding: 3px;
+    border-radius: 50%;
+    display: grid;
+    text-align: center;
+}
+
+.second-section{
+    margin-top: 40px;
+}
+
+.email{
+    outline-color: hsl(224, 93%, 58%);
+}
+
+.attribution { 
+    font-size: 10px;
+    text-align: center; 
+    margin-top: 50px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 600px) {
+    h1, h2, h3{
+        text-align: left;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    .navigation {
+        justify-content: space-between;
+        padding: 20px 60px;
+        margin: 10px 0 50px;
+    }
+
+    .first-section-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px 50px;
+    }
+
+    .first-illustration-container{
+        grid-column: 1/2;
+        grid-row: 1;
+        text-align: left;
+        align-self: center;
+    }
+
+    .inner-section {
+        display: flex;
+        padding: 80px;
+    }
+
+    .inner-section > :first-child { 
+        order: 2; 
+    }
+
+    .second-illustration-content-image{
+        flex: 1;
+        align-self: center;
+    }
+
+    .second-illustration-content{
+        padding: 0px 85px 0px 0px;
+        margin-top: 0px;
+        width: 60%;
+    }
+
+    .second-illustration-content h2{
+        font-size: 35px
+    }
+
+    .second-section-container{
+        background-image: url('../images/bg-curve-desktop.svg');
+        background-repeat: none;
+        margin-top: 60px;
+        padding-top: 70px;
+    }
+
+    .second-CTA-section{
+        display: flex;
+        text-align: left;
+        padding: 70px;
+    }
+
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .second-section{
+        margin-top: unset;
+    }
+
+    footer{
+        padding: 80px;
+    }
+
+    .first-section-container-form{
+        width: 95%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 15px;
+    }
+
+    .testimonial-div{
+        max-width: 50%;
+        margin-left: 0;
+    }
+
+    .fylo-link-outer-div{
+        padding: unset;
+        width: 148px;
+    }
+
+
+    .second-CTA-section-content{
+        padding-right: 120px;
+        width: 50%;
+    }
+    
+    .second-CTA-section-form{
+        padding-left: 120px;
+    }
+
+    .second-CTA-section-form > input[type=email]{
+        width: 500px;
+    }
+
+    button{
+        width: unset;
+    }
+}
